@@ -1,5 +1,4 @@
-require 'pathname'
-require Pathname(__FILE__).dirname.join('../spec_helper').expand_path
+require File.expand_path(File.join(File.dirname(__FILE__), '../spec_helper'))
 
 describe RBench::Runner, "#group" do
 

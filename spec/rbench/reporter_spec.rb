@@ -1,6 +1,5 @@
-require 'pathname'
-require Pathname(__FILE__).dirname.join('../spec_helper').expand_path
-require Pathname(__FILE__).dirname.join('../../lib/rbench/reporter').expand_path
+require File.expand_path(File.join(File.dirname(__FILE__), '../spec_helper'))
+require File.expand_path(File.join(File.dirname(__FILE__), '../../lib/rbench/reporter'))
 
 describe RBench::Reporter::Runner, "#add_reports" do
 
@@ -74,5 +73,3 @@ describe RBench::Reporter::Group, "#add_reports" do
   end
 
 end
-
-# EOF
